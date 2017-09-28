@@ -1,7 +1,8 @@
 <!doctype html>
 <head>
-<title>ÀÚ¹Ù½ºÅ©¸³Æ® ±âÃÊ½Ç½À</title>
+<title>ìë°”ìŠ¤í¬ë¦½íŠ¸ ê¸°ì´ˆì‹¤ìŠµ</title>
   <style>
+    
     input{font-size:1em;}
     button{font-size:1em;}
     body{font-size:2em;}
@@ -9,16 +10,15 @@
   </style>
 </head>
 <body> 
-  <h1 id="display"> 1ÁÖÂ÷ °úÁ¦ ÇÏ·ç ±ÇÀå Ä®·Î¸® °è»ê<h1>
-
- <h>¸Å¿ì È°µ¿ÀûÀÌ¸é 40, º¸Åë 45, È°µ¿ÀÌ ÀûÀ¸¸é 25</h>
+  <h1 id="display"> 1ì£¼ì°¨ ê³¼ì œ í•˜ë£¨ ê¶Œì¥ ì¹¼ë¡œë¦¬ ê³„ì‚°<h1>
   
-  
-  <input type = "text" id="weight" placeholder = "Ç¥ÁØÃ¼Áß">kg
-<input type = "text" id="active" placeholder = "È°µ¿·®">kg
+  <h>ë§¤ìš° í™œë™ì ì´ë©´ 40, ë³´í†µ 45, í™œë™ì´ ì ìœ¼ë©´ 25</h>
+    
+  <input type = "text" id="weight" placeholder = "í‘œì¤€ì²´ì¤‘">kg
+  <input type = "text" id="active" placeholder = "í™œë™ëŸ‰">
 
 
-  <br><button id="action">°è»êÇÏ±â</button>
+  <br><button id="action">ê³„ì‚°í•˜ê¸°</button>
   
   <script>
    
@@ -31,7 +31,7 @@
     
    function standardCalory(weight, active){
      var standardCalory = weight*active;
-     var Text = "´ç½ÅÀÇ ±ÇÀåÄ®·Î¸®´Â " + standardCalory + "ÀÔ´Ï´Ù."; 
+     var Text = "ë‹¹ì‹ ì˜ ê¶Œì¥ì¹¼ë¡œë¦¬ëŠ” " + standardCalory + "ì…ë‹ˆë‹¤."; 
      display.innerHTML = Text;
    }
     
