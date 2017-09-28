@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+<title>자바스크립트 기초실습</title>
+  <style>
+    input{font-size:1em;}
+    button{font-size:1em;}
+    body{font-size:2em;}
+    
+  </style>
+</head>
+<body> 
+  <h1 id="display"> 1주차 과제 하루 권장 칼로리 계산<h1>
+
+ <h>매우 활동적이면 40, 보통 45, 활동이 적으면 25</h>
+  
+  
+  <input type = "text" id="weight" placeholder = "표준체중">kg
+<input type = "text" id="active" placeholder = "활동량">kg
+
+
+  <br><button id="action">계산하기</button>
+  
+  <script>
+   
+    action.onclick = function(){
+     console.log("ok");
+     var myWeight = weight.value;
+     var myActive = active.value;
+     standardCalory(myWeight,myActive);
+    }
+    
+   function standardCalory(weight, active){
+     var standardCalory = weight*active;
+     var Text = "당신의 권장칼로리는 " + standardCalory + "입니다."; 
+     display.innerHTML = Text;
+   }
+    
+  </script>
+</body>
